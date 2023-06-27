@@ -1,0 +1,69 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Style components */
+@import url('./components/header.css');
+@import url('./components/aside-menu.css');
+
+/* Root */
+:root {
+
+    /* Colors */
+    --blue-blue-100: #96B9FD;
+    --blue-blue-200: #7BA4FC;
+    --blue-blue-300: #5081FB;
+    --blue-dark-blue: #051D3B;
+    --neutral-white: #FFF;
+
+    /* Form components - colors */
+    --normal-gray: rgba(255, 255, 255, 0.16);
+    --hover-gray: rgba(255, 255, 255, 0.24);
+
+    /* Buttons */
+    --filled-button-pressed: 4px solid rgba(80, 129, 251, 0.72);
+    --outlined-button-color: rgba(80, 129, 251, 0.08);
+    --outlined-button-hover: rgba(80, 129, 251, 0.16);
+    --outlined-button-pressed: 4px solid rgba(80, 129, 251, 0.24);
+    --outlined-button-focus: rgba(80, 129, 251, 0.24);
+    --menu-item-hover: rgba(80, 129, 251, 0.64);
+    --card-button-color: rgba(255, 255, 255, 0.00);
+    --card-button-hover: rgba(255, 255, 255, 0.08);
+
+    /* Typography */
+    --title-size: 2.1rem;
+    --title-height: 3.2rem;
+    --text-size: 1.6rem;
+    --text-height: 2.4rem;
+    --sidebar-title: 1.2rem;
+    --sidebar-height: 1.8rem;
+    --primary-font: 'Inter', sans-serif;
+
+    /* Shadows */
+    --primary-shadow: box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.24);
+
+    /* Root font-size */
+    font-size: 62.5%;
+
+}
+
+/* Geral Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--primary-font);
+    font-size: var(--text-size);
+    line-height: var(--text-height);
+    height: 100%;
+    background-color: var(--blue-dark-blue);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1728px;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
