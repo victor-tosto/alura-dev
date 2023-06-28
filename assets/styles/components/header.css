@@ -1,8 +1,9 @@
 /* Header */
 .header {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-areas: "logo search author";
+    grid-template-columns: 20% 60% 20%;
     max-width: 1728px;
     padding: 3.2rem 3.2rem 0;
     margin: 0 auto 4rem;
@@ -11,11 +12,13 @@
 /* Header Logo */
 .header__logo {
     display: flex;
+    grid-area: logo;
+    height: 3.4rem;
 }
 
 /* Header Search Area */
 .header__search-area {
-    width: 50%;
+    width: 90%;
     outline: none;
     padding: 1.6rem 1.4rem;
     border-radius: 8px;
@@ -23,6 +26,9 @@
     background-color: var(--normal-gray);
     color: var(--neutral-white);
     font-family: var(--primary-font);
+    font-size: var(--text-size);
+    grid-area: search;
+    justify-self: center;
 }
 
 .header__search-area:hover {
@@ -52,6 +58,8 @@
     text-decoration: none;
     border-radius: 8px;
     padding: 1.2rem;
+    grid-area: author;
+    justify-self: end;
 }
 
 .header__author:hover {

@@ -1,9 +1,11 @@
 /* Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Roboto+Mono&display=swap');
 
 /* Style components */
 @import url('./components/header.css');
-@import url('./components/aside-menu.css');
+@import url('./components/main.css');
+@import url('./components/aside.css');
+@import url('./components/code-editor.css');
 
 /* Root */
 :root {
@@ -13,7 +15,9 @@
     --blue-blue-200: #7BA4FC;
     --blue-blue-300: #5081FB;
     --blue-dark-blue: #051D3B;
+    --blue-alternative-blue: #6BD1FF;
     --neutral-white: #FFF;
+    --neutral-dark-gray: #141414;
 
     /* Form components - colors */
     --normal-gray: rgba(255, 255, 255, 0.16);
@@ -24,10 +28,11 @@
     --outlined-button-color: rgba(80, 129, 251, 0.08);
     --outlined-button-hover: rgba(80, 129, 251, 0.16);
     --outlined-button-pressed: 4px solid rgba(80, 129, 251, 0.24);
-    --outlined-button-focus: rgba(80, 129, 251, 0.24);
+    --outlined-button-active: rgba(80, 129, 251, 0.24);
     --menu-item-hover: rgba(80, 129, 251, 0.64);
     --card-button-color: rgba(255, 255, 255, 0.00);
     --card-button-hover: rgba(255, 255, 255, 0.08);
+    --select-color: rgba(255, 255, 255, 0.63);
 
     /* Typography */
     --title-size: 2.1rem;
@@ -37,9 +42,10 @@
     --sidebar-title: 1.2rem;
     --sidebar-height: 1.8rem;
     --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Roboto Mono', sans-serif;
 
     /* Shadows */
-    --primary-shadow: box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.24);
+    --primary-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.24);
 
     /* Root font-size */
     font-size: 62.5%;
@@ -60,10 +66,12 @@ html, body {
     background-color: var(--blue-dark-blue);
 }
 
-.main {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1728px;
-    padding: 0 3.2rem;
-    margin: 0 auto;
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../img/Vector\ 1.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
 }

@@ -47,6 +47,49 @@
             </button>
 
         </aside>
+        <!-- Code Editor -->
+        <section class="code">
+            <div class="code__editor">
+                <div class="editor__content">
+                    <div class="content__header">
+                        <img src="./assets/img/mac_buttons.svg" alt="Mac Buttons">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="15" class="content__text-area"></textarea>
+                </div>
+            </div>
+
+            <button class="code__button-highlight">Visualizar com o highlight</button>
+        </section>
+        <!-- Aside Project -->
+        <aside class="project">
+
+            <div class="sidebar">
+                <h3 class="sidebar__title">Seu projeto</h3>
+
+                <input type="text" placeholder="Nome do seu projeto" class="sidebar__project">
+                <textarea name="" id="" cols="30" rows="3" placeholder="Descrição do seu projeto" class="sidebar__project description"></textarea>
+            </div>
+            
+            <div class="sidebar">
+                <h3 class="sidebar__title">Personalização</h3>
+                
+                <select name="" id="" placeholder="Selecione" class="sidebar__select">
+                    <option value="" class="select__option">Selecione</option>
+                    <option value="html" class="select__option">HTML</option>
+                    <option value="css" class="select__option">CSS</option>
+                    <option value="js" class="select__option">JavaScript</option>
+                </select>
+
+                <div class="sidebar__container">
+                    <div class="container__color-picker"></div>
+                    <input type="color" value="#6BD1FF" class="color-picker__invisible">
+                </div>
+                
+            </div>
+
+            <button class="sidebar__save-button">Salvar projeto</button>
+
+        </aside>
 
     </main>
 

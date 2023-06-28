@@ -1,0 +1,29 @@
+/* Main Content */
+.main {
+    display: grid;
+    grid-template-areas: "menu code project";
+    grid-template-columns: 20% 60% 20%;
+    max-width: 1728px;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+/* Grid Areas */
+
+.sidebar {
+    grid-area: menu;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    grid-area: code;
+    justify-self: center;
+    width: 90%;
+}
+
+.project {
+    grid-area: project;
+    justify-self: end;
+}

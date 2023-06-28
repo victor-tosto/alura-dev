@@ -1,0 +1,56 @@
+/* Code Editor */
+.code__editor {
+    padding: 3.2rem;
+    background-color: var(--blue-alternative-blue);
+    border-radius: 8px;
+    width: 100%;
+    max-height: 366px;
+}
+
+.editor__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    background-color: var(--neutral-dark-gray);
+    padding: 1.6rem;
+    border-radius: 8px;
+    box-shadow: var(--primary-shadow);
+    height: 100%;
+}
+
+/* Code Editor - Text Area */
+
+.content__text-area {
+    height: 100%;
+    resize: none;
+    outline: 0;
+    background-color: var(--neutral-dark-gray);
+    border: none;
+    color: var(--neutral-white);
+    font-size: 1.4rem;
+    font-family: var(--secondary-font);
+}
+
+/* Button Highlight */
+
+.code__button-highlight {
+    width: 100%;
+    padding: 1.6rem 0;
+    background-color: var(--outlined-button-color);
+    color: var(--neutral-white);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.code__button-highlight:hover {
+    background-color: var(--outlined-button-hover);
+}
+
+.code__button-highlight:focus {
+    border: var(--outlined-button-pressed);
+}
+
+.code__button-highlight:active {
+    background-color: var(--outlined-button-active);
+}
