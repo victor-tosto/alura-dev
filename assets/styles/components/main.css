@@ -6,6 +6,7 @@
     max-width: 1728px;
     padding: 0 3.2rem;
     margin: 0 auto;
+    position: relative;
 }
 
 /* Grid Areas */
@@ -26,4 +27,25 @@
 .project {
     grid-area: project;
     justify-self: end;
+}
+
+/* Resposive */
+
+@media screen and (max-width: 820px) {
+    
+    .main {
+        grid-template-areas: "code" "project";
+        grid-template-columns: 100%;
+        gap: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .code {
+        width: 100%;
+    }
+
+    .project {
+        justify-self: center;
+    }
+
 }

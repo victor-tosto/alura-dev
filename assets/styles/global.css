@@ -5,6 +5,7 @@
 @import url('./components/header.css');
 @import url('./components/main.css');
 @import url('./components/aside.css');
+@import url('./components/nav-mobile.css');
 @import url('./components/code-editor.css');
 
 /* Root */
@@ -15,6 +16,7 @@
     --blue-blue-200: #7BA4FC;
     --blue-blue-300: #5081FB;
     --blue-dark-blue: #051D3B;
+    --blue-dark-blue-2: #2D415B;
     --blue-alternative-blue: #6BD1FF;
     --neutral-white: #FFF;
     --neutral-dark-gray: #141414;

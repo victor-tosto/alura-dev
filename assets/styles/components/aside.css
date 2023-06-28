@@ -101,6 +101,12 @@
     resize: none;
 }
 
+.sidebar__container--mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
 .sidebar__select {
     font-size: var(--text-size);
     outline: none;
@@ -173,4 +179,23 @@
 
 .sidebar__save-button:active {
     background-color: var(--blue-blue-100);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 820px) {
+    
+    aside.sidebar {
+        display: none;
+    }
+
+    .project {
+        max-width: 100%;
+    }
+
+    .sidebar__container--mobile {
+        flex-direction: row;
+        gap: 1.6rem;
+    }
+
 }

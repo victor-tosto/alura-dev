@@ -10,7 +10,7 @@
     <title>Alura DEV</title>
 
     <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/global.css">
 
 </head>
 
@@ -29,22 +29,57 @@
             <span class="author__name">Harry</span>
         </a>
 
+        <div class="header__menu-hamburger">
+            <button class="menu-hamburger__button">
+                <span class="button__bar"></span>
+                <span class="button__bar"></span>
+                <span class="button__bar"></span>
+            </button>
+        </div>
+
     </header>
     <!-- Main Content -->
     <main class="main">
+        <!-- Nav Mobile -->
+        <nav class="nav-mobile">
+            <a href="./index.html" class="nav-mobile__index-anchor">
+                <button class="sidebar__button">
+                    <img src="./assets/img/icon_code.svg" alt="" class="button__image">
+                    <span class="button__text">Editor de código</span>
+                </button>
+            </a>
+            <a href="" class="nav-mobile__community-anchor">
+                <button class="sidebar__button">
+                    <img src="./assets/img/icon_users.svg" alt="" class="button__image">
+                    <span class="button__text">Comunidade</span>
+                </button>
+            </a>
+
+            <div class="nav-mobile__divisor">
+            </div>
+
+            <a href="#" class="nav-mobile__author">
+                <img src="./assets/img/Photo.svg" alt="Foto de perfil" class="author__image">
+                <span class="author__name">Harry</span>
+            </a>
+        </nav>
         <!-- Aside Menu -->
         <aside class="sidebar">
 
             <h3 class="sidebar__title">Menu</h3>
 
-            <button href="#" class="sidebar__button">
-                <img src="./assets/img/icon_code.svg" alt="" class="button__image">
-                <span class="button__text">Editor de código</span>
-            </button>
-            <button href="#" class="sidebar__button">
-                <img src="./assets/img/icon_users.svg" alt="" class="button__image">
-                <span class="button__text">Comunidade</span>
-            </button>
+            <a href="./index.html">
+                <button class="sidebar__button">
+                    <img src="./assets/img/icon_code.svg" alt="" class="button__image">
+                    <span class="button__text">Editor de código</span>
+                </button>
+            </a>
+            <a href="#">
+                <button class="sidebar__button">
+                    <img src="./assets/img/icon_users.svg" alt="" class="button__image">
+                    <span class="button__text">Comunidade</span>
+                </button>
+            </a>
 
         </aside>
         <!-- Code Editor -->
@@ -73,26 +108,29 @@
             <div class="sidebar">
                 <h3 class="sidebar__title">Personalização</h3>
                 
-                <select name="" id="" placeholder="Selecione" class="sidebar__select">
-                    <option value="" class="select__option">Selecione</option>
-                    <option value="html" class="select__option">HTML</option>
-                    <option value="css" class="select__option">CSS</option>
-                    <option value="js" class="select__option">JavaScript</option>
-                </select>
-
-                <div class="sidebar__container">
-                    <div class="container__color-picker"></div>
-                    <input type="color" value="#6BD1FF" class="color-picker__invisible">
+                <div class="sidebar__container--mobile">
+                    <select name="" id="" placeholder="Selecione" class="sidebar__select">
+                        <option value="" class="select__option">Selecione</option>
+                        <option value="html" class="select__option">HTML</option>
+                        <option value="css" class="select__option">CSS</option>
+                        <option value="js" class="select__option">JavaScript</option>
+                    </select>
+    
+                    <div class="sidebar__container">
+                        <div class="container__color-picker"></div>
+                        <input type="color" value="#6BD1FF" class="color-picker__invisible">
+                    </div>
                 </div>
                 
             </div>
-
+            <!-- Save Project Button -->
             <button class="sidebar__save-button">Salvar projeto</button>
 
         </aside>
 
     </main>
 
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 .header {
     display: grid;
     align-items: center;
-    grid-template-areas: "logo search author";
+    grid-template-areas: "logo search authorOrNav";
     grid-template-columns: 20% 60% 20%;
     max-width: 1728px;
     padding: 3.2rem 3.2rem 0;
@@ -58,7 +58,7 @@
     text-decoration: none;
     border-radius: 8px;
     padding: 1.2rem;
-    grid-area: author;
+    grid-area: authorOrNav;
     justify-self: end;
 }
 
@@ -69,4 +69,79 @@
 
 .author__name {
     color: var(--neutral-white);
+}
+
+.header__menu-hamburger {
+    display: none;
+}
+
+.menu-hamburger__button {
+    display: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button__bar {
+    border-radius: 1px;
+    width: 2.2rem;
+    height: 0.3rem;
+    background-color: var(--neutral-white);
+    margin-top: 0.4rem;
+    transition: .2s;
+    transform-origin: 2.1rem;
+}
+
+.button__bar:first-child {
+    margin: 0;
+}
+
+.menu-hamburger__button.open {
+    position: fixed;
+}
+
+.menu-hamburger__button.open .button__bar:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.menu-hamburger__button.open .button__bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburger__button.open .button__bar:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 820px) {
+
+    .header {
+        grid-template-columns: 20% 60% auto;
+        gap: 4rem;
+    }
+
+    .header__search-area {
+        width: 100%;
+    }
+    
+    .header__author {
+        display: none;
+    }
+
+    .header__menu-hamburger {
+        display: flex;
+        justify-self: center;
+        grid-area: authorOrNav;
+    }
+
+    .menu-hamburger__button {
+        display: inline-block;
+    }
+
+    .button__bar {
+        display: block;
+    }
 }
