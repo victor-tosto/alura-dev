@@ -1,4 +1,4 @@
-<img src="./assets/img/Logo.svg" alt="Alura DEV" align="center">
+<h1 align="center"><img src="./assets/img/Logo.svg" alt="Alura DEV"></h1>
 
 <p align="center">
   Projeto Alura DEV desenvolvido durante a primeira edição do Alura Challenge de Front-End, com o intuito de simular um ambiente real de trabalho.
@@ -36,7 +36,7 @@
 
   - Desktop: 1440px;
   - Tablet: 768px;
-  - Mobile: 375px;
+  - Mobile: 375px.
 
   A ideia do projeto é bem simples, basicamente ele funciona como um editor de código, onde podemos escolher dar um nome, colocar uma descrição e selecionar a linguagem presente no código, e logo após isso temos a opção de salvar nosso projeto dentro do site.
 </p>
