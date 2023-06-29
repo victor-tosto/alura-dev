@@ -1,0 +1,37 @@
+/* Search Mobile */
+
+.search-area-mobile {
+    display: none;
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 85vw;
+    transition: .5s;
+    transform: translateX(100rem);
+}
+
+.search-area-mobile.open {
+    transform: translate(-50%);
+}
+
+.header__search-area.mobile {
+    display: block;
+    background-color: var(--blue-dark-blue-2);
+}
+
+.search-area-mobile__button {
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 660px) {
+    
+    .search-area-mobile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+}

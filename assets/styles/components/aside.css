@@ -199,3 +199,11 @@
     }
 
 }
+
+@media screen and (max-width: 412px) {
+    
+    .sidebar__container--mobile {
+        flex-direction: column;
+    }
+
+}

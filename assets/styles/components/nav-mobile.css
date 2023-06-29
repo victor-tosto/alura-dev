@@ -1,10 +1,12 @@
+/* Nav Mobile */
+
 .nav-mobile {
     display: none;
     background-color: var(--blue-dark-blue-2);
     border-radius: 8px;
     position: fixed;
     padding: 2.4rem;
-    height: 85%;
+    height: 80vh;
     right: 0;
     z-index: 1;
     transition: .5s;
@@ -48,6 +50,14 @@
     .nav-mobile {
         display: flex;
         flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    
+    .nav-mobile {
+        height: 70vh;
     }
 
 }

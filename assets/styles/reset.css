@@ -23,6 +23,8 @@ time, mark, audio, video, button {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
+	outline: 0;
+	background-color: transparent;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

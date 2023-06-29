@@ -29,12 +29,20 @@
             <span class="author__name">Harry</span>
         </a>
 
-        <div class="header__menu-hamburger">
-            <button class="menu-hamburger__button">
-                <span class="button__bar"></span>
-                <span class="button__bar"></span>
-                <span class="button__bar"></span>
-            </button>
+        <div class="header__menu-mobile">
+            <div class="menu-mobile__search-area">
+                <button class="search-area__button">
+                    <img src="./assets/img/search.svg" alt="Pesquisar">
+                </button>
+            </div>
+    
+            <div class="header__menu-hamburger">
+                <button class="menu-hamburger__button">
+                    <span class="button__bar"></span>
+                    <span class="button__bar"></span>
+                    <span class="button__bar"></span>
+                </button>
+            </div>
         </div>
 
     </header>
@@ -63,6 +71,13 @@
                 <span class="author__name">Harry</span>
             </a>
         </nav>
+        <!-- Overlay -->
+        <div id="overlay"></div>
+        <!-- Search Area Mobile -->
+        <div class="search-area-mobile">
+            <input type="search" placeholder="Busque por algo" class="header__search-area mobile">
+            <img class="search-area-mobile__button" src="./assets/img/x.svg" alt="X">
+        </div>
         <!-- Aside Menu -->
         <aside class="sidebar">
 

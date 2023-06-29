@@ -1,4 +1,5 @@
 /* Code Editor */
+
 .code__editor {
     padding: 3.2rem;
     background-color: var(--blue-alternative-blue);
@@ -53,4 +54,13 @@
 
 .code__button-highlight:active {
     background-color: var(--outlined-button-active);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 660px) {
+    
+    .code__editor {
+        max-height: 100%;
+    }
 }

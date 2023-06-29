@@ -7,6 +7,7 @@
 @import url('./components/aside.css');
 @import url('./components/nav-mobile.css');
 @import url('./components/code-editor.css');
+@import url('./components/search-mobile.css');
 
 /* Root */
 :root {
@@ -76,4 +77,25 @@ select {
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
+}
+
+.suppress-scroll {
+    overflow-y: hidden;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1; 
+}
+
+#overlay.open {
+    display: block;
 }
