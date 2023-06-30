@@ -23,14 +23,17 @@ btnHamburger.addEventListener("click", () => {
 btnSearch.addEventListener("click", () => {
     searchAreaMobile.classList.toggle('open');
     overlay.classList.add('open');
+    suppressScroll.classList.add('suppress-scroll');
 
     verifyMenu();
 
 });
 
+// Close search mobile
 btnX.addEventListener("click", () => {
     searchAreaMobile.classList.remove('open');
     overlay.classList.remove('open');
+    suppressScroll.classList.remove('suppress-scroll');
 });
 
 // Checks if the mobile menu is open 
@@ -39,7 +42,6 @@ function verifyMenu() {
     if (btnHamburger.classList.contains('open')) {
         btnHamburger.classList.remove('open');
         navMobile.classList.remove('open');
-        suppressScroll.classList.remove('suppress-scroll');
     } else {
         return
     }
