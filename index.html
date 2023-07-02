@@ -9,6 +9,7 @@
 
     <title>Alura DEV</title>
 
+    <link rel="stylesheet" href="./assets/styles/dracula.css">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/global.css">
 
@@ -104,7 +105,9 @@
                     <div class="content__header">
                         <img src="./assets/img/mac_buttons.svg" alt="Mac Buttons">
                     </div>
-                    <textarea name="" id="" cols="30" rows="15" class="content__text-area"></textarea>
+                    <div class="content__wrapper">
+                        <code class="wrapper__text-area hljs" contenteditable="true"></code>
+                    </div>
                 </div>
             </div>
 
@@ -124,7 +127,7 @@
                 <h3 class="sidebar__title">Personalização</h3>
                 
                 <div class="sidebar__container--mobile">
-                    <select name="" id="" placeholder="Selecione" class="sidebar__select">
+                    <select placeholder="Selecione" class="sidebar__select">
                         <option value="" class="select__option">Selecione</option>
                         <option value="html" class="select__option">HTML</option>
                         <option value="css" class="select__option">CSS</option>
@@ -145,6 +148,8 @@
 
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="./assets/js/highlight.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

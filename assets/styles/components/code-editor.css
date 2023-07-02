@@ -5,14 +5,15 @@
     background-color: var(--blue-alternative-blue);
     border-radius: 8px;
     width: 100%;
-    max-height: 366px;
+    height: 100%;
+    min-height: 366px;
 }
 
 .editor__content {
     display: flex;
     flex-direction: column;
+    background-color: var(--dracula-theme);
     gap: 2.4rem;
-    background-color: var(--neutral-dark-gray);
     padding: 1.6rem;
     border-radius: 8px;
     box-shadow: var(--primary-shadow);
@@ -21,15 +22,17 @@
 
 /* Code Editor - Text Area */
 
-.content__text-area {
+.content__wrapper {
     height: 100%;
-    resize: none;
-    outline: 0;
-    background-color: var(--neutral-dark-gray);
+}
+
+.wrapper__text-area {
+    height: 100%;
     border: none;
     color: var(--neutral-white);
     font-size: 1.4rem;
     font-family: var(--secondary-font);
+    white-space: pre-wrap;
 }
 
 /* Button Highlight */
@@ -58,9 +61,9 @@
 
 /* Responsive */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 412px) {
     
     .code__editor {
-        max-height: 100%;
+        min-height: 492px;
     }
 }

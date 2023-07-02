@@ -4,7 +4,7 @@
     grid-template-areas: "menu code project";
     grid-template-columns: 20% 60% 20%;
     max-width: 1728px;
-    padding: 0 3.2rem;
+    padding: 0 3.2rem 3.2rem;
     margin: 0 auto;
     position: relative;
 }
