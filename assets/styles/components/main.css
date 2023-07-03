@@ -9,6 +9,16 @@
     position: relative;
 }
 
+.main--community {
+    display: grid;
+    grid-template-areas: "menu cards";
+    grid-template-columns: 23% 1fr;
+    max-width: 1728px;
+    padding: 0 3.2rem 3.2rem;
+    margin: 0 auto;
+    position: relative;
+}
+
 /* Grid Areas */
 
 .sidebar {
@@ -27,6 +37,10 @@
 .project {
     grid-area: project;
     justify-self: end;
+}
+
+.cards {
+    grid-area: cards;
 }
 
 /* Resposive */

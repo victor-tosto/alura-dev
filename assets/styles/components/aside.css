@@ -181,6 +181,15 @@
     background-color: var(--blue-blue-100);
 }
 
+.button__image.active-background {
+    background-color: var(--blue-blue-300);
+    opacity: 1;
+}
+
+.button__text.active-text {
+    opacity: 1;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 820px) {

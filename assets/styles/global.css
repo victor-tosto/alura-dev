@@ -8,6 +8,7 @@
 @import url('./components/nav-mobile.css');
 @import url('./components/code-editor.css');
 @import url('./components/search-mobile.css');
+@import url('./components/cards.css');
 
 /* Root */
 :root {
@@ -22,6 +23,7 @@
     --neutral-white: #FFF;
     --neutral-dark-gray: #141414;
     --dracula-theme: #282936;
+    --bg-cards: rgba(0, 0, 0, 0.16);
 
     /* Form components - colors */
     --normal-gray: rgba(255, 255, 255, 0.16);

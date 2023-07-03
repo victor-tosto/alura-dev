@@ -9,6 +9,11 @@ const searchAreaMobile = document.querySelector('.search-area-mobile');
 const btnX = document.querySelector('.search-area-mobile__button');
 const overlay = document.querySelector('#overlay');
 
+// Background Code Editor
+const codeEditorBackground = document.querySelector('.code__editor');
+const changeBackgroundColor = document.querySelector('.container__color-picker');
+const inputColor = document.querySelector('.color-picker__invisible');
+
 // Menu Hamburger
 btnHamburger.addEventListener("click", () => {
     btnHamburger.classList.toggle('open');
@@ -35,6 +40,14 @@ btnX.addEventListener("click", () => {
     overlay.classList.remove('open');
     suppressScroll.classList.remove('suppress-scroll');
 });
+
+// Change background color of code editor
+inputColor.addEventListener("input", (e) => {
+    changeBackgroundColor.style.backgroundColor = e.target.value;
+    codeEditorBackground.style.backgroundColor = e.target.value;
+});
+
+
 
 // Checks if the mobile menu is open 
 function verifyMenu() {

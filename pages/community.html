@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alura DEV</title>
+
+    <link rel="stylesheet" href="../assets/styles/dracula.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/global.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Header Content -->
+        <a href="#" class="header__logo">
+            <img src="../assets/img/Logo.svg" alt="ALURA DEV" class="logo__image">
+        </a>
+
+        <input type="search" placeholder="Busque por algo" class="header__search-area">
+
+        <a href="#" class="header__author">
+            <img src="../assets/img/Photo.svg" alt="Foto de perfil" class="author__image">
+            <span class="author__name">Harry</span>
+        </a>
+
+        <div class="header__menu-mobile">
+            <div class="menu-mobile__search-area">
+                <button class="search-area__button">
+                    <img src="../assets/img/search.svg" alt="Pesquisar">
+                </button>
+            </div>
+    
+            <div class="header__menu-hamburger">
+                <button class="menu-hamburger__button">
+                    <span class="button__bar"></span>
+                    <span class="button__bar"></span>
+                    <span class="button__bar"></span>
+                </button>
+            </div>
+        </div>
+
+    </header>
+    <!-- Main Content -->
+    <main class="main--community">
+        <!-- Nav Mobile -->
+        <nav class="nav-mobile">
+            <a href="./index.html" class="nav-mobile__index-anchor">
+                <button class="sidebar__button">
+                    <img src="../assets/img/icon_code.svg" alt="" class="button__image">
+                    <span class="button__text">Editor de código</span>
+                </button>
+            </a>
+            <a href="./community.html" class="nav-mobile__community-anchor">
+                <button class="sidebar__button">
+                    <img src="../assets/img/icon_users.svg" alt="" class="button__image">
+                    <span class="button__text">Comunidade</span>
+                </button>
+            </a>
+
+            <div class="nav-mobile__divisor">
+            </div>
+
+            <a href="#" class="nav-mobile__author">
+                <img src="../assets/img/Photo.svg" alt="Foto de perfil" class="author__image">
+                <span class="author__name">Harry</span>
+            </a>
+        </nav>
+        <!-- Overlay -->
+        <div id="overlay"></div>
+        <!-- Search Area Mobile -->
+        <div class="search-area-mobile">
+            <input type="search" placeholder="Busque por algo" class="header__search-area mobile">
+            <img class="search-area-mobile__button" src="../assets/img/x.svg" alt="X">
+        </div>
+        <!-- Aside Menu -->
+        <aside class="sidebar">
+
+            <h3 class="sidebar__title">Menu</h3>
+
+            <a href="./index.html">
+                <button class="sidebar__button">
+                    <img src="../assets/img/icon_code.svg" alt="" class="button__image">
+                    <span class="button__text">Editor de código</span>
+                </button>
+            </a>
+            <a href="./community.html">
+                <button class="sidebar__button">
+                    <img src="../assets/img/icon_users.svg" alt="" class="button__image active-background">
+                    <span class="button__text active-text">Comunidade</span>
+                </button>
+            </a>
+
+        </aside>
+        <!-- Cards -->
+        <section class="cards">
+
+            <div class="cards__container">
+                <div class="container__code">
+                    <div class="code__content">
+                        <img src="../assets/img/mac_buttons.svg" alt="Mac Buttons" class="content__image">
+                        <code class="content__code-text">...</code>
+                    </div>
+                </div>
+                <div class="container__info">
+                    <div class="info__content">
+                        <h2 class="content__title">Título do projeto</h2>
+                        <p class="content__text">Essa é a descrição do meu projeto.</p>
+                    </div>
+                </div>
+
+                <div class="container__feedback">
+                    <div class="feedback__content">
+                        <div class="content__comments">
+                            <button class="comments__button">
+                                <img src="../assets/img/comments.svg" alt="Comentários">
+                            </button>
+                            <span>9</span>
+                        </div>
+                        <div class="content__favs">
+                            <button class="favs__button">
+                                <img src="../assets/img/fav.svg" alt="Curtidas">
+                            </button>
+                            <span>9</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback__profile">
+                        <img src="../assets/img/Photo.svg" alt="Perfil" class="profile__image">
+                        <span class="profile__name">@Harry</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards__container">
+                <div class="container__code">
+                    <div class="code__content">
+                        <img src="../assets/img/mac_buttons.svg" alt="Mac Buttons" class="content__image">
+                        <code class="content__code-text">...</code>
+                    </div>
+                </div>
+                <div class="container__info">
+                    <div class="info__content">
+                        <h2 class="content__title">Título do projeto</h2>
+                        <p class="content__text">Essa é a descrição do meu projeto.</p>
+                    </div>
+                </div>
+                <div class="container__feedback">
+                    <div class="feedback__content">
+                        <div class="content__comments">
+                            <button class="comments__button">
+                                <img src="../assets/img/comments.svg" alt="Comentários">
+                            </button>
+                            <span>9</span>
+                        </div>
+                        <div class="content__favs">
+                            <button class="favs__button">
+                                <img src="../assets/img/fav.svg" alt="Curtidas">
+                            </button>
+                            <span>9</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback__profile">
+                        <img src="../assets/img/Photo.svg" alt="Perfil" class="profile__image">
+                        <span class="profile__name">@Harry</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards__container">
+                <div class="container__code">
+                    <div class="code__content">
+                        <img src="../assets/img/mac_buttons.svg" alt="Mac Buttons" class="content__image">
+                        <code class="content__code-text">...</code>
+                    </div>
+                </div>
+                <div class="container__info">
+                    <div class="info__content">
+                        <h2 class="content__title">Título do projeto</h2>
+                        <p class="content__text">Essa é a descrição do meu projeto.</p>
+                    </div>
+                </div>
+                <div class="container__feedback">
+                    <div class="feedback__content">
+                        <div class="content__comments">
+                            <button class="comments__button">
+                                <img src="../assets/img/comments.svg" alt="Comentários">
+                            </button>
+                            <span>9</span>
+                        </div>
+                        <div class="content__favs">
+                            <button class="favs__button">
+                                <img src="../assets/img/fav.svg" alt="Curtidas">
+                            </button>
+                            <span>9</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback__profile">
+                        <img src="../assets/img/Photo.svg" alt="Perfil" class="profile__image">
+                        <span class="profile__name">@Harry</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards__container">
+                <div class="container__code">
+                    <div class="code__content">
+                        <img src="../assets/img/mac_buttons.svg" alt="Mac Buttons" class="content__image">
+                        <code class="content__code-text">...</code>
+                    </div>
+                </div>
+                <div class="container__info">
+                    <div class="info__content">
+                        <h2 class="content__title">Título do projeto</h2>
+                        <p class="content__text">Essa é a descrição do meu projeto.</p>
+                    </div>
+                </div>
+                <div class="container__feedback">
+                    <div class="feedback__content">
+                        <div class="content__comments">
+                            <button class="comments__button">
+                                <img src="../assets/img/comments.svg" alt="Comentários">
+                            </button>
+                            <span>9</span>
+                        </div>
+                        <div class="content__favs">
+                            <button class="favs__button">
+                                <img src="../assets/img/fav.svg" alt="Curtidas">
+                            </button>
+                            <span>9</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback__profile">
+                        <img src="../assets/img/Photo.svg" alt="Perfil" class="profile__image">
+                        <span class="profile__name">@Harry</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="../assets/js/highlight.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
