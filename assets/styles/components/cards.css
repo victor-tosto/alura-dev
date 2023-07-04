@@ -26,7 +26,7 @@
 .code__content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.2rem;
     background-color: var(--dracula-theme);
     border-radius: 8px;
     padding: 1.2rem;
@@ -38,6 +38,12 @@
 .content__image {
     height: 0.9rem;
     align-self: start;
+}
+
+.content__code-text {
+    font-size: 1.1rem;
+    line-height: normal;
+    font-weight: 400;
 }
 
 .container__info {
@@ -85,11 +91,32 @@
     color: var(--neutral-white);
     font-size: var(--text-size);
     line-height: var(--text-height);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.content__comments:hover, 
+.content__favs:hover {
+    padding: 0.8rem;
+    border-radius: 1.6rem;
+    background-color: var(--card-button-hover);
+}
+
+.content__comments:active, .content__favs:active {
+    background-color: var(--normal-gray);
 }
 
 .comments__button, .favs__button {
     display: flex;
     cursor: pointer;
+}
+
+.favs__button svg {
+    fill: var(--neutral-white);
+}
+
+.content__favs:active svg {
+    fill: var(--red-fav);
 }
 
 .feedback__profile {
@@ -110,34 +137,83 @@
     color: var(--neutral-white);
 }
 
-.cards__container:nth-child(1):hover{
-    min-height: 464px;
+@media screen and (min-width: 821px) {
+    
+    .cards__container:nth-child(1):hover{
+        min-height: 464px;
+    }
+    
+    .cards__container:nth-child(2):hover{
+        min-height: 464px;
+    }
+    
+    .cards__container:nth-child(3):hover{
+        min-height: 464px;
+    }
+    
+    .cards__container:nth-child(4):hover{
+        min-height: 464px;
+    }
+    
+    .cards__container:nth-child(1):hover .container__feedback{
+        opacity: 1;
+    }
+    
+    .cards__container:nth-child(2):hover .container__feedback{
+        opacity: 1;
+    }
+    
+    .cards__container:nth-child(3):hover .container__feedback{
+        opacity: 1;
+    }
+    
+    .cards__container:nth-child(4):hover .container__feedback{
+        opacity: 1;
+    }
+
 }
 
-.cards__container:nth-child(2):hover{
-    min-height: 464px;
+/* Responsive */
+
+@media screen and (max-width: 820px) {
+    
+    .cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 3.2rem;
+    }
+
+    .cards__container {
+        min-width: 100%;
+        min-height: 518px;
+    }
+
+    .container__code {
+        max-height: 342px;
+    }
+
+    .content__image {
+        height: 1.2rem;
+    }
+
+    .content__code-text {
+        font-size: 1.4rem;
+    }
+
+    .container__feedback {
+        opacity: 1;
+    }
+
 }
 
-.cards__container:nth-child(3):hover{
-    min-height: 464px;
-}
+@media screen and (max-width: 412px) {
 
-.cards__container:nth-child(4):hover{
-    min-height: 464px;
-}
+    .cards__container {
+        min-height: 578px;
+    }
 
-.cards__container:nth-child(1):hover .container__feedback{
-    opacity: 1;
-}
+    .container__code {
+        max-height: 402px;
+    }
 
-.cards__container:nth-child(2):hover .container__feedback{
-    opacity: 1;
-}
-
-.cards__container:nth-child(3):hover .container__feedback{
-    opacity: 1;
-}
-
-.cards__container:nth-child(4):hover .container__feedback{
-    opacity: 1;
 }

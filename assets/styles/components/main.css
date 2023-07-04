@@ -43,7 +43,7 @@
     grid-area: cards;
 }
 
-/* Resposive */
+/* Responsive */
 
 @media screen and (max-width: 820px) {
     
@@ -60,6 +60,11 @@
 
     .project {
         justify-self: center;
+    }
+
+    .main--community {
+        grid-template-areas: "cards";
+        grid-template-columns: 100%;
     }
 
 }
