@@ -11,6 +11,10 @@ function saveProject() {
     let projectBackground = document.querySelector('.color-picker__invisible').value;
     let projectCode = document.querySelector('.content__wrapper').innerText;
 
+    if (projectBackground == '#000000') {
+        projectBackground = '#6BD1FF';
+    }
+
     let card = {
 
         projectTitle: projectTitle,
