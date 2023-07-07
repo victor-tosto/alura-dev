@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="Status Concluído" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
+  <img alt="Status Concluído" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge">
 </p>
 
 <br>
@@ -43,7 +43,7 @@
 
 ## 📁 Acesso ao projeto
 
-<p>O projeto ainda está em desenvolvimento.</p>
+<p>Para acessar o projeto é só <a href="https://alura-dev-seven.vercel.app/">"Clicar aqui"</a></p>
 
 ## 👨‍💻 Autor
 
