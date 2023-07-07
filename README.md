@@ -15,6 +15,8 @@
   <img alt="Status Concluído" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge">
 </p>
 
+<img src="/assets/img/demo.gif" alt="Demonstração do projeto">
+
 <br>
 <br>
 
